@@ -3,7 +3,7 @@
    ESTÉTICA - MITOLOGIA GREGA
    ========================================= */
 
-* {
+   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,565 +15,271 @@ html {
 
 body {
     font-family: Georgia, "Times New Roman", serif;
-
     color: #e6dfd1;
     background-color: #090909;
-
     line-height: 1.7;
-
-    /* BACKGROUND PRINCIPAL DO SITE */
     background-image:
-        linear-gradient(rgba(0, 0, 0, 0.68),
-            rgba(0, 0, 0, 0.78)),
+        linear-gradient(rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.78)),
         url("media/img/background.jpg");
-
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
-
-/* =========================================
-   HEADER
-   ========================================= */
+/* HEADER */
 
 header {
     min-height: 500px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     text-align: center;
-
-    /* BACKGROUND DO HEADER */
     background:
-        linear-gradient(rgba(0, 0, 0, 0.30),
-            rgba(0, 0, 0, 0.85)),
+        linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.85)),
         url("media/img/god-of-war-background.jpg");
-
     background-size: cover;
     background-position: center;
-
     border-bottom: 4px solid #8b1e1e;
-
     position: relative;
 }
 
-
-/* Sombra na parte inferior do Header */
-
 header::after {
     content: "";
-
     position: absolute;
-
     bottom: 0;
     left: 0;
-
     width: 100%;
     height: 140px;
-
-    background:
-        linear-gradient(transparent,
-            #090909);
-
+    background: linear-gradient(transparent, #090909);
     pointer-events: none;
 }
 
-
-/* =========================================
-   LOGOTIPO
-   ========================================= */
+/* LOGOTIPO */
 
 #logotipo {
     width: 600px;
     max-width: 85%;
     height: auto;
-
     position: relative;
     z-index: 1;
-
     filter:
         drop-shadow(0 0 15px rgba(0, 0, 0, 0.9))
         drop-shadow(0 0 25px rgba(139, 30, 30, 0.4));
-
 }
-
 
 header p {
     margin-top: 25px;
-
     font-size: 1.3rem;
     font-weight: bold;
-
     color: #d2aa58;
-
-    text-shadow:
-        2px 2px 5px #000,
-        0 0 10px rgba(0, 0, 0, 0.8);
-
+    text-shadow: 2px 2px 5px #000, 0 0 10px rgba(0, 0, 0, 0.8);
     position: relative;
     z-index: 1;
 }
 
-
-/* =========================================
-   NAVEGAÇÃO
-   ========================================= */
+/* NAVEGAÇÃO */
 
 nav {
-    background:
-        linear-gradient(180deg,
-            #181513,
-            #0c0c0c);
-
+    background: linear-gradient(180deg, #181513, #0c0c0c);
     border-top: 1px solid #6d542d;
     border-bottom: 3px solid #8b1e1e;
-
     position: sticky;
     top: 0;
-
     z-index: 1000;
-
-    box-shadow:
-        0 5px 20px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);
 }
-
 
 nav ul {
     list-style: none;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     gap: 45px;
-
     padding: 18px;
 }
 
-
 nav a {
     color: #d8c49b;
-
     text-decoration: none;
-
     font-size: 1.05rem;
     font-weight: bold;
-
     text-transform: uppercase;
-
     letter-spacing: 2px;
-
     transition: 0.3s;
 }
 
-
 nav a:hover {
     color: #c52b22;
-
-    text-shadow:
-        0 0 8px rgba(197, 43, 34, 0.8),
-        0 0 15px rgba(197, 43, 34, 0.4);
+    text-shadow: 0 0 8px rgba(197, 43, 34, 0.8), 0 0 15px rgba(197, 43, 34, 0.4);
 }
 
-
-/* =========================================
-   CONTEÚDO PRINCIPAL
-   ========================================= */
+/* CONTEÚDO */
 
 main {
     width: 90%;
     max-width: 1100px;
-
     margin: 0 auto;
-
-    background:
-        linear-gradient(rgba(10, 9, 8, 0.78),
-            rgba(10, 9, 8, 0.78));
-
-    box-shadow:
-        0 0 50px rgba(0, 0, 0, 0.8);
+    background: linear-gradient(rgba(10, 9, 8, 0.78), rgba(10, 9, 8, 0.78));
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
 }
-
-
-/* =========================================
-   SEÇÕES
-   ========================================= */
 
 section {
     padding: 70px 20px;
-
     border-bottom: 1px solid #493c2b;
-
     position: relative;
 }
 
-
 section h2 {
     text-align: center;
-
     color: #d2aa58;
-
     font-size: 2.4rem;
-
     text-transform: uppercase;
-
     letter-spacing: 3px;
-
     margin-bottom: 35px;
-
-    text-shadow:
-        2px 2px 4px #000,
-        0 0 12px rgba(210, 170, 88, 0.25);
+    text-shadow: 2px 2px 4px #000, 0 0 12px rgba(210, 170, 88, 0.25);
 }
 
-
-/* Ornamento grego abaixo dos títulos */
-
-section h2::after {
-
-
-    display: block;
-
-    margin-top: 10px;
-
-    color: #9b2520;
-
-    font-size: 1.1rem;
-
-    letter-spacing: 8px;
-}
-
-
-/* =========================================
-   TEXTOS
-   ========================================= */
 
 section p {
     max-width: 900px;
-
     margin: 0 auto 25px;
-
     font-size: 1.1rem;
-
     color: #d0c7b8;
-
     text-align: justify;
 }
 
-
 .destaque {
     color: #b52a23;
-
     font-weight: bold;
-
-    text-shadow:
-        0 0 5px rgba(181, 42, 35, 0.35);
+    text-shadow: 0 0 5px rgba(181, 42, 35, 0.35);
 }
 
-
-/* =========================================
-   TRAILER
-   ========================================= */
+/* TRAILER */
 
 #trailer {
     text-align: center;
 }
 
-
 video,
 #trailer iframe {
     display: block;
-
     width: 90%;
     max-width: 850px;
-
     height: 470px;
-
     margin: 25px auto;
-
     border: 2px solid #72552b;
-
     border-radius: 6px;
-
-    box-shadow:
-        0 0 25px rgba(0, 0, 0, 0.95),
-        0 0 10px rgba(130, 30, 20, 0.2);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.95), 0 0 10px rgba(130, 30, 20, 0.2);
 }
-
 
 video {
     background: #000;
 }
 
-
-/* =========================================
-   TRILHA SONORA
-   ========================================= */
+/* TRILHA SONORA */
 
 #trilha iframe {
     width: 100%;
-
     max-width: 700px;
-
     height: 352px;
-
     border: none;
-
     border-radius: 12px;
-
     display: block;
-
     margin: 20px auto;
 }
 
-
 audio {
+    display: block;
     width: 80%;
-
     max-width: 700px;
-
     margin: 15px auto;
 }
-p{
-    text-align:right;
-}
 
-
-/* =========================================
-   TABELA DE EDIÇÕES
-   ========================================= */
+/* TABELA DE EDIÇÕES */
 
 .tabela-edicoes {
     width: 100%;
-
     border-collapse: collapse;
-
     margin: 30px auto;
-
-    background:
-        linear-gradient(135deg,
-            #171412,
-            #0e0e0e);
-
-    box-shadow:
-        0 0 25px rgba(0, 0, 0, 0.9);
-
+    background: linear-gradient(135deg, #171412, #0e0e0e);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.9);
     border: 1px solid #554326;
 }
 
-
 .tabela-edicoes caption {
     caption-side: top;
-
     padding: 15px;
-
     color: #d2aa58;
-
     font-size: 1.2rem;
-
     font-weight: bold;
-
     letter-spacing: 1px;
 }
-
 
 .tabela-edicoes th,
 .tabela-edicoes td {
     padding: 18px 15px;
-
     border: 1px solid #3f3527;
-
     text-align: center;
 }
 
-
 .tabela-edicoes thead th {
     background: #1d1915;
-
     color: #d2aa58;
-
     text-transform: uppercase;
-
     letter-spacing: 1px;
 }
 
-
 .tabela-edicoes tbody th {
     text-align: left;
-
     color: #d8d0c0;
-
     background: #151311;
 }
-
 
 .tabela-edicoes tbody tr {
     transition: 0.2s;
 }
 
-
 .tabela-edicoes tbody tr:hover {
     background: #291716;
 }
 
-
-/* =========================================
-   EDIÇÃO EM DESTAQUE
-   ========================================= */
-
 .tabela-edicoes .destaque {
     background: #451816;
-
     color: #e0b85e;
-
     font-weight: bold;
 }
 
-
-/* =========================================
-   DISPONIBILIDADE
-   ========================================= */
+.disponivel,
+.indisponivel {
+    font-weight: bold;
+}
 
 .disponivel {
     color: #d2aa58;
-
-    font-weight: bold;
 }
-
 
 .indisponivel {
     color: #666;
-
-    font-weight: bold;
 }
 
-
-/* =========================================
-   RODAPÉ
-   ========================================= */
+/* RODAPÉ */
 
 footer {
     padding: 35px 20px;
-
     text-align: center;
-
-    background:
-        linear-gradient(180deg,
-            #0c0b0a,
-            #050505);
-
+    background: linear-gradient(180deg, #0c0b0a, #050505);
     border-top: 3px solid #8b1e1e;
-
-    box-shadow:
-        0 -10px 30px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.5);
 }
-
 
 footer p {
     color: #777;
-
     font-size: 0.9rem;
 }
 
 
-/* =========================================
-   DETALHES DECORATIVOS GREGOS
-   ========================================= */
-
-main::before {
-
-
-    display: block;
-
-    text-align: center;
-
-    padding: 25px 0 5px;
-
-    color: #72552b;
-
-    font-size: 1.2rem;
-
-    letter-spacing: 10px;
-}
-
-
-/* =========================================
-   RESPONSIVIDADE
-   ========================================= */
-
-@media (max-width: 768px) {
-
-    header {
-        min-height: 400px;
-    }
-
-
-    #logotipo {
-        width: 280px;
-    }
-
-
-    header p {
-        font-size: 1rem;
-
-        padding: 0 20px;
-    }
-
-
-    nav ul {
-        gap: 15px;
-
-        flex-wrap: wrap;
-    }
-
-
-    nav a {
-        font-size: 0.85rem;
-    }
-
-
-    section {
-        padding: 50px 10px;
-    }
-
-
-    section h2 {
-        font-size: 1.8rem;
-    }
-
-
-    section p {
-        font-size: 1rem;
-
-        text-align: left;
-    }
-
-
-    video,
-    #trailer iframe {
-        width: 100%;
-
-        height: 300px;
-    }
-
-
-    .tabela-edicoes {
-        font-size: 0.8rem;
-    }
-
-
-    .tabela-edicoes th,
-    .tabela-edicoes td {
-        padding: 10px 5px;
-    }
-}
-/* =========================================
-   LISTA DE ESPERA
-   ========================================= */
+/* LISTA DE ESPERA */
 
 #lista-de-espera {
     max-width: 850px;
@@ -586,184 +292,221 @@ main::before {
     margin: 0 auto 45px;
 }
 
-
-/* =========================================
-   FORMULÁRIO
-   ========================================= */
-
 .form-lista-espera {
     width: 100%;
     max-width: 650px;
     margin: 0 auto;
-
     padding: 35px;
-
-    background:
-        linear-gradient(
-            145deg,
-            rgba(25, 21, 17, 0.95),
-            rgba(8, 8, 8, 0.95)
-        );
-
+    background: linear-gradient(145deg, rgba(25, 21, 17, 0.95), rgba(8, 8, 8, 0.95));
     border: 1px solid #5c4728;
     border-top: 3px solid #8b1e1e;
-
-    box-shadow:
-        0 0 30px rgba(0, 0, 0, 0.8);
-
     border-radius: 4px;
-
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
     text-align: left;
 }
-
-
-/* =========================================
-   CAMPOS
-   ========================================= */
 
 .campo {
     display: flex;
     flex-direction: column;
-
     margin-bottom: 25px;
 }
 
-
-.campo label {
-    margin-bottom: 8px;
-
-    color: #d2aa58;
-
-    font-size: 1rem;
+.campo > label,
+.campo legend {
+    margin-bottom: 10px;
+    color: #e6c27a;
+    font-size: 16px;
     font-weight: bold;
-
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
-
-.campo input {
+.campo input,
+.campo select,
+.campo textarea {
     width: 100%;
-
-    padding: 14px 16px;
-
-    background: #0c0c0c;
-
-    color: #e6dfd1;
-
-    border: 1px solid #554326;
-    border-radius: 3px;
-
+    padding: 13px 15px;
+    background: #151515;
+    color: #eee;
+    border: 1px solid #6b1b1b;
+    border-radius: 4px;
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 1rem;
-
+    font-size: 15px;
     outline: none;
-
     transition: 0.3s;
 }
 
-
-.campo input::placeholder {
+.campo input::placeholder,
+.campo textarea::placeholder {
     color: #777;
 }
 
-
-.campo input:focus {
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
     border-color: #a52a23;
-
-    box-shadow:
-        0 0 10px rgba(165, 42, 35, 0.35);
+    box-shadow: 0 0 8px rgba(165, 42, 35, 0.35);
 }
 
+.campo select {
+    cursor: pointer;
+}
 
-/* =========================================
-   BOTÕES
-   ========================================= */
+.campo textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+fieldset.campo {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid #5c1818;
+    border-radius: 5px;
+}
+
+fieldset.campo legend {
+    padding: 0 10px;
+}
+
+fieldset.campo label {
+    display: block;
+    margin: 12px 0;
+    color: #ccc;
+    font-size: 15px;
+    cursor: pointer;
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+fieldset.campo input[type="radio"],
+fieldset.campo input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+    accent-color: #a22222;
+    cursor: pointer;
+}
+
+.campo input[type="color"] {
+    width: 70px;
+    height: 45px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.campo input[type="file"] {
+    cursor: pointer;
+}
+
+.campo input[type="file"]::file-selector-button {
+    padding: 9px 14px;
+    margin-right: 10px;
+    background: #8f1d1d;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.campo input[type="file"]::file-selector-button:hover {
+    background: #c62828;
+}
+
+/* BOTÕES */
 
 .botoes-formulario {
     display: flex;
     justify-content: center;
     gap: 15px;
-
     margin-top: 30px;
 }
 
-
 .botoes-formulario button {
     padding: 14px 22px;
-
+    background: linear-gradient(180deg, #92251f, #551613);
+    color: #eee5d5;
     border: 1px solid #72552b;
     border-radius: 3px;
-
-    background:
-        linear-gradient(
-            180deg,
-            #92251f,
-            #551613
-        );
-
-    color: #eee5d5;
-
     font-family: Georgia, "Times New Roman", serif;
-
     font-size: 0.95rem;
     font-weight: bold;
-
     text-transform: uppercase;
     letter-spacing: 1px;
-
     cursor: pointer;
-
     transition: 0.3s;
 }
 
-
 .botoes-formulario button:hover {
-    background:
-        linear-gradient(
-            180deg,
-            #b52d24,
-            #701a16
-        );
-
-    box-shadow:
-        0 0 15px rgba(181, 45, 36, 0.4);
-
+    background: linear-gradient(180deg, #b52d24, #701a16);
+    box-shadow: 0 0 15px rgba(181, 45, 36, 0.4);
     transform: translateY(-2px);
 }
 
-
-/* Botão limpar */
-
 .botoes-formulario button[type="reset"] {
-    background:
-        linear-gradient(
-            180deg,
-            #25211c,
-            #11100e
-        );
-
+    background: linear-gradient(180deg, #25211c, #11100e);
     color: #b5a98f;
-
     border-color: #554326;
 }
 
-
 .botoes-formulario button[type="reset"]:hover {
     color: #d2aa58;
-
     border-color: #72552b;
-
-    box-shadow:
-        0 0 12px rgba(210, 170, 88, 0.2);
+    box-shadow: 0 0 12px rgba(210, 170, 88, 0.2);
 }
 
-
-/* =========================================
-   RESPONSIVIDADE DO FORMULÁRIO
-   ========================================= */
+/* RESPONSIVIDADE */
 
 @media (max-width: 768px) {
+    header {
+        min-height: 400px;
+    }
+
+    #logotipo {
+        width: 280px;
+    }
+
+    header p {
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        font-size: 0.85rem;
+    }
+
+    section {
+        padding: 50px 10px;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    section p {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    video,
+    #trailer iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    .tabela-edicoes {
+        font-size: 0.8rem;
+    }
+
+    .tabela-edicoes th,
+    .tabela-edicoes td {
+        padding: 10px 5px;
+    }
 
     .form-lista-espera {
         padding: 25px 20px;
@@ -775,5 +518,26 @@ main::before {
 
     .botoes-formulario button {
         width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .campo {
+        margin-bottom: 20px;
+    }
+
+    .campo > label,
+    .campo legend {
+        font-size: 14px;
+    }
+
+    .campo input,
+    .campo select,
+    .campo textarea {
+        font-size: 14px;
+    }
+
+    fieldset.campo {
+        padding: 15px;
     }
 }
