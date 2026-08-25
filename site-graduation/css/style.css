@@ -1,296 +1,300 @@
-/* =========================================
-   GRADUATION
-   Color: #8C2A6A
-========================================= */
-
-
-/* =========================================
-   RESET
-========================================= */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #ffffff;
-
     background:
         radial-gradient(
             circle at 50% 0%,
             #c77aaf 0%,
-            #8c2a6a 30%,
-            #64184d 60%,
-            #421034 100%
+            #8c2a6a 25%,
+            #54143f 55%,
+            #36102b 80%,
+            #24101f 100%
         );
 
     background-attachment: fixed;
+
+    color: #f5edf3;
 }
 
-
-/* =========================================
-   HEADER
-========================================= */
 
 header {
-    min-height: 75vh;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    text-align: center;
-
-    padding: 60px 20px;
-
     background:
         radial-gradient(
-            circle at center,
-            rgba(214, 153, 195, 0.35),
-            transparent 55%
+            ellipse at center,
+            rgba(255, 255, 255, 0.15),
+            transparent 60%
         );
 }
 
-header h1 {
-    font-family: Arial, Helvetica, sans-serif;
-
-    font-size: clamp(4rem, 12vw, 9rem);
-
-    font-weight: 900;
-
-    letter-spacing: -6px;
-
-    color: #ffffff;
-
-    text-shadow:
-        0 5px 25px rgba(50, 8, 38, 0.35);
-}
-
-header p {
-    margin-top: 25px;
-
-    color: #f1dce9;
-
-    font-size: 1rem;
-
-    font-weight: bold;
-
-    letter-spacing: 6px;
-}
-
-
-/* =========================================
-   NAVIGATION
-========================================= */
 
 nav {
-    position: sticky;
-    top: 0;
-
-    z-index: 100;
-
-    background: rgba(84, 20, 63, 0.85);
-
-    backdrop-filter: blur(12px);
-
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    background: rgba(35, 10, 28, 0.9);
+    backdrop-filter: blur(10px);
 }
 
-nav ul {
-    min-height: 65px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    gap: 45px;
-
-    list-style: none;
-}
-
-nav a {
-    color: #ffffff;
-
-    text-decoration: none;
-
-    font-size: 0.85rem;
-
-    font-weight: bold;
-
+h1,
+h2,
+h3 {
     letter-spacing: 2px;
-
-    text-transform: uppercase;
-
-    transition: color 0.3s ease;
 }
 
-nav a:hover {
-    color: #e7b8d3;
-}
-
-
-/* =========================================
-   MAIN
-========================================= */
-
-main {
-    width: min(1150px, 90%);
-
-    margin: auto;
-
-    padding: 100px 0;
-}
 
 section {
-    margin-bottom: 130px;
-}
-
-section h2 {
-    margin-bottom: 35px;
-
-    font-size: clamp(2rem, 5vw, 3.5rem);
-
-    font-weight: 900;
-
-    text-transform: uppercase;
-
-    letter-spacing: -1px;
-
-    color: #ffffff;
+    scroll-margin-top: 80px;
 }
 
 
-/* =========================================
-   ABOUT
-========================================= */
-
-#about {
-    max-width: 800px;
-
-    padding: 40px;
-
-    background: rgba(199, 122, 175, 0.12);
-
-    border-left: 4px solid #c77aaf;
-}
-
-#about p {
-    color: #f0dce8;
-
-    font-size: 1.1rem;
-
-    line-height: 1.8;
-}
-
-
-/* =========================================
-   PRODUCTS
-========================================= */
-
-#products {
-    display: grid;
-
-    grid-template-columns: 1.3fr 0.7fr;
-
-    gap: 30px;
-
-    align-items: start;
-}
-
-#products h2 {
-    grid-column: 1 / -1;
-}
-
-
-/* =========================================
-   PRODUCT
-========================================= */
-
-.product {
-    overflow: hidden;
-
-    background:
-        linear-gradient(
-            145deg,
-            rgba(199, 122, 175, 0.20),
-            rgba(84, 20, 63, 0.35)
-        );
+.product-card {
+    background: rgba(255, 255, 255, 0.06);
 
     border: 1px solid rgba(255, 255, 255, 0.15);
 
-    box-shadow:
-        0 20px 50px rgba(53, 8, 40, 0.25);
+    border-radius: 20px;
 
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
+    transition: 0.3s;
 }
 
-.product:hover {
+
+.product-card:hover {
     transform: translateY(-8px);
 
     box-shadow:
-        0 30px 70px rgba(53, 8, 40, 0.35);
-}
-/* =========================================
-   PRODUCT IMAGES
-========================================= */
-
-.product img {
-    display: block;
-    width: 100%;
-    object-fit: contain;
+        0 20px 40px rgba(0, 0, 0, 0.35);
 }
 
 
-/* =========================================
-   DROPOUT BEAR
-========================================= */
+.product-image {
+    height: 390px;
+}
 
- .product img {
-    width: 1%;
-    height: 600px;
+
+.product-image img {
+    max-height: 360px;
 
     object-fit: contain;
-    object-position: center;
 
-    padding: 30px;
+    filter:
+        drop-shadow(
+            0 20px 20px rgba(0, 0, 0, 0.4)
+        );
+
+    transition: 0.3s;
+}
+
+
+.product-card:hover img {
+    transform: scale(1.04);
+}
+
+
+.bear {
+    max-width: 290px;
+}
+
+
+.vinyl {
+    max-width: 470px;
+}
+
+
+.product-number {
+    font-size: 0.8rem;
+
+    letter-spacing: 4px;
+
+    opacity: 0.5;
+}
+
+
+.spotify-player {
+    border-radius: 15px;
+}
+
+
+#contact a {
+    color: #f3b4dd;
+}
+
+
+footer {
+    background: rgba(20, 5, 16, 0.7);
+}
+
+
+@media (max-width: 768px) {
+
+    .product-image {
+        height: 300px;
+    }
+
+    .bear {
+        max-width: 220px;
+    }
+
+}
+.user-photo {
+    width: 48px;
+    height: 48px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+    border: 2px solid #c77aaf;
+
+    cursor: pointer;
+}
+.user-photo {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #c77aaf;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.user-photo:hover {
+    transform: scale(1.1);
+}
+.graduation-table {
+    --bs-table-bg: rgba(84, 20, 63, 0.75);
+    --bs-table-color: #f8edf5;
+    --bs-table-border-color: rgba(255, 255, 255, 0.12);
+
+    overflow: hidden;
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+}
+
+.graduation-table thead th {
+    background: #8C2A6A;
+    color: white;
+
+    padding: 18px;
+
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.graduation-table td {
+    padding: 16px;
+}
+
+.graduation-table tbody tr {
+    transition: 0.3s;
+}
+
+.graduation-table tbody tr:hover {
+    --bs-table-bg: rgba(199, 122, 175, 0.18);
+}
+
+.graduation-table tbody td:first-child {
+    font-weight: bold;
+    color: #e8c9dc;
+}
+
+#comparison h2 {
+    letter-spacing: 3px;
+}
+.graduation-logo {
+    display: inline-block;
+
+    font-family: "Archivo Black", sans-serif;
+    font-size: clamp(3rem, 8vw, 6.5rem);
+
+    color: #ff3ca6;
+
+    font-style: italic;
+    font-weight: 900;
+    letter-spacing: -4px;
+
+    transform: skewX(-10deg);
+
+    text-shadow:
+        3px 3px 0 #8c2a6a,
+        6px 6px 15px rgba(0, 0, 0, 0.35);
+
+    margin: 0;
+}
+.graduation-brand {
+    font-family: "Archivo Black", sans-serif;
+
+    color: #ff3ca6 !important;
+
+    font-style: italic;
+    letter-spacing: -1px;
+
+    transform: skewX(-8deg);
+}
+.kanye-name {
+    color: #ff3ca6;
+
+    font-size: 1.1rem;
+    font-weight: 700;
+    font-style: italic;
+
+    letter-spacing: 4px;
+
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+.media-card {
+    padding: 40px;
 
     background:
         radial-gradient(
-            circle at center,
-            #c77aaf 0%,
-            #8c2a6a 50%,
-            #54143f 100%
-        );
+            circle at 80% 50%,
+            rgba(199, 122, 175, 0.18),
+            transparent 45%
+        ),
+        rgba(255, 255, 255, 0.04);
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 20px;
 }
 
+.media-year {
+    color: #ff3ca6;
 
-/* =========================================
-   STRIPED SHIRT
-========================================= */
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
 
-.product:not(.featured) img {
-    width: 100%;
-    height: 400px;
+.media-title {
+    margin: 10px 0 20px;
 
-    object-fit: contain;
-    object-position: center;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
 
-    padding: 25px;
+.media-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
 
-    background:
-        linear-gradient(
-            145deg,
-            #a94c88,
-            #6a1e52
-        );
+    opacity: 0.8;
+}
+
+.media-label {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    color: #f3b4dd;
+
+    font-size: 0.7rem;
+    letter-spacing: 3px;
+}
+
+.video-wrapper {
+    overflow: hidden;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.video-wrapper iframe {
+    border: 0;
 }
