@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria Urbana</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--
+    ============================================================
+    DESAFIO — HTML SEMÂNTICO + CSS + BOOTSTRAP
+    ============================================================
+
+    Você recebeu uma página criada por outro desenvolvedor.
+
+    O conteúdo está pronto, mas a estrutura possui problemas
+    de semântica, organização, responsividade e apresentação.
+    Ou seja, tá um lixo.
+
+    SUA MISSÃO:
+    1. Corrigir a estrutura semântica.
+    2. Corrigir o grid do Bootstrap.
+    3. Criar a identidade visual no CSS.
+    4. Testar a responsividade.
+
+    ------------------------------------------------------------
+    HTML SEMÂNTICO
+    ------------------------------------------------------------
+    Analise os <div> utilizados como estrutura de página.
+    Substitua-os por elementos semânticos quando fizer sentido:
+
+    <header> <nav> <main> <section> <article> <aside> <footer>
+
+    Verifique também:
+    - hierarquia dos títulos;
+    - links e botões;
+    - imagens e atributos alt;
+    - organização do conteúdo.
+
+    ------------------------------------------------------------
+    BOOTSTRAP
+    ------------------------------------------------------------
+    HTML está chamando as classes, mas não funciona. Por quê?
+
+    Na galeria, o resultado esperado é:
+    - telas pequenas: 1 coluna;
+    - telas médias: 2 colunas;
+    - telas grandes: 3 colunas.
+    Ou seja: conteúdo deve ser RESPONSIVO
+
+    DEVE utilizar:
+    .container
+    .row
+    .col-*
+
+    Você pode utilizar outras classes Bootstrap se elas
+    resolverem um problema real da interface.
+
+    NÃO existe quantidade mínima de classes.
+
+    ------------------------------------------------------------
+    CSS
+    ------------------------------------------------------------
+    Abra o style.css e atenda aos requisitos encontrados nele.
+
+    ------------------------------------------------------------
+    REGRA PRINCIPAL
+    ------------------------------------------------------------
+    O objetivo é identificar um problema, decidir como resolvê-lo
+    e saber pesquisar a ferramenta adequada.
+
+    ------------------------------------------------------------
+    DESAFIO EXTRA
+    ------------------------------------------------------------
+    Encontre na documentação do Bootstrap um recurso que não
+    foi utilizado nesta atividade.
+
+    Use-o em algum ponto da página e escreva um comentário
+    explicando qual problema ele resolve.
+    ============================================================
+    -->
+
+    <!-- Avalie se <div> é adequado aqui. -->
+    <header class="topo">
+        <div class="container">
+            <h1>Galeria Urbana</h1>
+            <p>Arte, fotografia e design independente.</p>
+        </div>
+    </header>
+
+    <!-- Transforme esta área em uma navegação semântica. -->
+    <nav class="menu">
+        <div class="container">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#obras">Obras</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>    
+        </div>
+    </nav>
+
+    
+    <section id="inicio">
+        <h2>Arte que ocupa espaço.</h2>
+        <p>
+    <main class="container">
+            Uma seleção de trabalhos de artistas independentes
+            que exploram cidade, tecnologia e cotidiano.
+        </p>
+        </section>
+
+        <section id="obras">
+            <h2>Obras em destaque</h2>
+
+            <!--
+            As colunas estão configuradas de forma horrorosa.
+
+            Corrija para:
+            celular = 1 coluna
+            tablet  = 2 colunas
+            desktop = 3 colunas
+            -->
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <div class="obra">
+                        <img class="img-fluid" src="https://picsum.photos/id/1011/900/600" alt="Paisagem urbana">
+                        <h3>Horizonte</h3>
+                        <p>Fotografia experimental sobre a relação entre cidade e espaço.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="obra">
+                        <img class="img-fluid" src="https://picsum.photos/id/1015/900/600" alt="Montanha">
+                        <h3>Fora do Eixo</h3>
+                        <p>Uma investigação visual sobre deslocamento e perspectiva.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="obra">
+                        <img class="img-fluid" src="https://picsum.photos/id/1043/900/600" alt="Paisagem natural">
+                        <h3>Silêncio</h3>
+                        <p>O contraste entre ambientes naturais e estruturas construídas.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="obra">
+                        <img class="img-fluid" src="https://picsum.photos/id/1067/900/600" alt="Pessoa em ambiente urbano">
+                        <h3>Fluxo</h3>
+                        <p>Pessoas, movimento e o ritmo das grandes cidades.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="obra">
+                        <img  class="img-fluid" src="https://picsum.photos/id/1035/900/600" alt="Paisagem">
+                        <h3>Concreto</h3>
+                        <p>Texturas e formas encontradas na arquitetura cotidiana.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="obra">
+                        <img class="img-fluid" src="https://picsum.photos/id/1025/900/600" alt="Animal">
+                        <h3>Interferência</h3>
+                        <p>Uma composição sobre natureza, cidade e presença humana.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <div id="sobre">
+            <h2>Sobre a galeria</h2>
+            <p>A Galeria Urbana nasceu com o objetivo de aproximar artistas independentes de novos públicos.</p>
+            <p>Nosso acervo reúne fotografia, ilustração, design gráfico e experimentações visuais.</p>
+        </div>
+
+        <!-- Esta informação pode ter uma função semântica específica. -->
+        
+        <div class="informacao">
+            <h2>Visite também</h2>
+            <p>Toda semana publicamos entrevistas e processos criativos de artistas convidados.</p>
+            <a href="#contato">Receba novidades</a>
+        </div>
+    
+        <div id="contato">
+            <h2>Entre em contato</h2>
+            <p>Quer enviar seu trabalho ou receber novidades? Preencha o formulário.</p>
+
+            <form>
+                <div>
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome">
+                </div>
+
+                <div>
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="seu@email.com">
+                </div>
+
+                <div>
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem"></textarea>
+                </div>
+
+                <button type="submit">Enviar mensagem</button>
+            </form>
+        </div>
+        
+        
+        
+        
+    </main>
+        <footer class="rodape">
+            <div class="container">
+                <p>Galeria Urbana — 2026</p>
+                <a href="#inicio">Voltar ao início</a>
+            </div>
+        </footer>
+        <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+  </script>
+
+</body>
+</html>

@@ -3,482 +3,195 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>StreetStep | Loja de Tênis</title>
+  <title>Loja de Tênis</title>
 
-  <!------------------------- Bootstrap 5.3.8 via CDN ------------------------->
+  <!-- Bootstrap 5.3.8 via CDN -->
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
     rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-  <!------------------------- NAVBAR ------------------------->
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand fw-bold" href="#inicio">
-          StreetStep
-        </a>
+    <nav>
+      <a href="#">StreetStep</a>
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#menuPrincipal"
-          aria-controls="menuPrincipal"
-          aria-expanded="false"
-          aria-label="Abrir menu">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <button type="button">
+        Menu
+      </button>
 
-        <div class="collapse navbar-collapse" id="menuPrincipal">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="#produtos">Produtos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#tamanhos">Tamanhos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#cadastro">Cadastro</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#duvidas">Dúvidas</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <ul>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#tamanhos">Tamanhos</a></li>
+        <li><a href="#cadastro">Cadastro</a></li>
+        <li><a href="#duvidas">Dúvidas</a></li>
+      </ul>
     </nav>
   </header>
 
   <main>
 
-    <!------------------------- HERO ------------------------->
-    <section id="inicio" class="hero py-5">
-      <div class="container py-5">
-        <div class="row align-items-center">
-          <div class="col-lg-8">
-            <span class="badge text-bg-warning mb-3">
-              LANÇAMENTO
-            </span>
-
-            <h1 class="display-3 fw-bold">
-              Seu próximo passo começa aqui.
-            </h1>
-
-            <p class="lead">
-              Tênis urbanos para quem quer conforto, estilo e personalidade.
-            </p>
-
-            <a href="#produtos" class="btn btn-warning btn-lg">
-              Ver produtos
-            </a>
-          </div>
-        </div>
+    <section id="inicio">
+      <div>
+        <p>LANÇAMENTO</p>
+        <h1>Seu próximo passo começa aqui.</h1>
+        <p>
+          Tênis urbanos para quem quer conforto, estilo e personalidade.
+        </p>
       </div>
     </section>
 
-    <!------------------------- ALERT ------------------------->
-    <section class="py-4">
-      <div class="container">
-        <div
-          class="alert alert-warning alert-dismissible fade show"
-          role="alert">
+    <section id="produtos">
+      <h2>Produtos</h2>
 
-          <strong>Oferta da semana!</strong>
-          Frete grátis para compras acima de R$ 300,00.
+      <article>
+        <h3>StreetStep Urban</h3>
+        <p>Modelo leve para uso cotidiano.</p>
+        <p>R$ 299,90</p>
 
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="alert"
-            aria-label="Fechar">
+        <button type="button">
+          Ver detalhes
+        </button>
+      </article>
+
+      <article>
+        <h3>StreetStep Run</h3>
+        <p>Conforto para acompanhar sua rotina.</p>
+        <p>R$ 349,90</p>
+
+        <button type="button">
+          Ver detalhes
+        </button>
+      </article>
+
+      <article>
+        <h3>StreetStep Pro</h3>
+        <p>Mais suporte para atividades intensas.</p>
+        <p>R$ 449,90</p>
+
+        <button type="button">
+          Ver detalhes
+        </button>
+      </article>
+    </section>
+
+    <!-- ALERT -->
+    <section>
+      <h2>Oferta</h2>
+      <div>
+        Frete grátis para compras acima de R$ 300,00.
+      </div>
+    </section>
+
+    <!-- TABLE -->
+    <section id="tamanhos">
+      <h2>Tabela de tamanhos</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Tamanho</th>
+            <th>Comprimento do pé</th>
+            <th>Disponibilidade</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>37</td>
+            <td>24,5 cm</td>
+            <td>Disponível</td>
+          </tr>
+          <tr>
+            <td>38</td>
+            <td>25,2 cm</td>
+            <td>Disponível</td>
+          </tr>
+          <tr>
+            <td>39</td>
+            <td>26,0 cm</td>
+            <td>Disponível</td>
+          </tr>
+          <tr>
+            <td>40</td>
+            <td>26,7 cm</td>
+            <td>Últimas unidades</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- FORM -->
+    <section id="cadastro">
+      <h2>Cadastre-se</h2>
+
+      <form>
+        <div>
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome">
+        </div>
+
+        <div>
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="seu@email.com">
+        </div>
+
+        <div>
+          <label for="tamanho">Tamanho preferido</label>
+          <select id="tamanho" name="tamanho">
+            <option value="">Selecione</option>
+            <option value="37">37</option>
+            <option value="38">38</option>
+            <option value="39">39</option>
+            <option value="40">40</option>
+          </select>
+        </div>
+
+        <div>
+          <input type="checkbox" id="novidades" name="novidades">
+          <label for="novidades">Quero receber novidades.</label>
+        </div>
+
+        <button type="submit">
+          Cadastrar
+        </button>
+      </form>
+    </section>
+
+    <!-- ACCORDION -->
+    <section id="duvidas">
+      <h2>Dúvidas frequentes</h2>
+
+      <div>
+
+        <h3>
+          <button type="button">
+            Como escolher o tamanho?
           </button>
-        </div>
-      </div>
-    </section>
+        </h3>
 
-    <!------------------------- PRODUTOS ------------------------->
-    <section id="produtos" class="py-5">
-      <div class="container">
-
-        <div class="text-center mb-5">
-          <p class="section-label">CATÁLOGO</p>
-          <h2 class="fw-bold">Escolha seu estilo</h2>
-          <p class="text-secondary">
-            Produtos selecionados para sua rotina.
-          </p>
+        <div>
+          Consulte nossa tabela de medidas antes de finalizar a compra.
         </div>
 
-        <div class="row g-4">
+        <h3>
+          <button type="button">
+            Qual é o prazo de entrega?
+          </button>
+        </h3>
 
-          <div class="col-md-4">
-            <article class="card product-card h-100">
-              <div class="product-placeholder">URBAN</div>
-
-              <div class="card-body">
-                <span class="badge text-bg-dark mb-2">CASUAL</span>
-
-                <h3 class="h4 card-title">
-                  StreetStep Urban
-                </h3>
-
-                <p class="card-text">
-                  Modelo leve para uso cotidiano.
-                </p>
-
-                <p class="price">
-                  R$ 299,90
-                </p>
-
-                <button
-                  type="button"
-                  class="btn btn-dark w-100"
-                  data-bs-toggle="modal"
-                  data-bs-target="#modalUrban">
-                  Ver detalhes
-                </button>
-              </div>
-            </article>
-          </div>
-
-          <div class="col-md-4">
-            <article class="card product-card h-100">
-              <div class="product-placeholder">RUN</div>
-
-              <div class="card-body">
-                <span class="badge text-bg-warning mb-2">SPORT</span>
-
-                <h3 class="h4 card-title">
-                  StreetStep Run
-                </h3>
-
-                <p class="card-text">
-                  Conforto para acompanhar sua rotina.
-                </p>
-
-                <p class="price">
-                  R$ 349,90
-                </p>
-
-                <button
-                  type="button"
-                  class="btn btn-dark w-100"
-                  data-bs-toggle="modal"
-                  data-bs-target="#modalRun">
-                  Ver detalhes
-                </button>
-              </div>
-            </article>
-          </div>
-
-          <div class="col-md-4">
-            <article class="card product-card h-100">
-              <div class="product-placeholder">PRO</div>
-
-              <div class="card-body">
-                <span class="badge text-bg-dark mb-2">PERFORMANCE</span>
-
-                <h3 class="h4 card-title">
-                  StreetStep Pro
-                </h3>
-
-                <p class="card-text">
-                  Mais suporte para atividades intensas.
-                </p>
-
-                <p class="price">
-                  R$ 449,90
-                </p>
-
-                <button
-                  type="button"
-                  class="btn btn-dark w-100"
-                  data-bs-toggle="modal"
-                  data-bs-target="#modalPro">
-                  Ver detalhes
-                </button>
-              </div>
-            </article>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!------------------------- TABLE ------------------------->
-    <section id="tamanhos" class="py-5 bg-white">
-      <div class="container">
-
-        <div class="mb-4">
-          <p class="section-label">MEDIDAS</p>
-          <h2 class="fw-bold">Tabela de tamanhos</h2>
+        <div>
+          O prazo depende da região e é apresentado no fechamento do pedido.
         </div>
 
-        <div class="table-responsive">
-          <table class="table table-striped table-hover align-middle">
-            <thead class="table-dark">
-              <tr>
-                <th scope="col">Tamanho</th>
-                <th scope="col">Comprimento do pé</th>
-                <th scope="col">Disponibilidade</th>
-              </tr>
-            </thead>
+        <h3>
+          <button type="button">
+            Posso trocar o produto?
+          </button>
+        </h3>
 
-            <tbody>
-              <tr>
-                <th scope="row">37</th>
-                <td>24,5 cm</td>
-                <td><span class="badge text-bg-success">Disponível</span></td>
-              </tr>
-
-              <tr>
-                <th scope="row">38</th>
-                <td>25,2 cm</td>
-                <td><span class="badge text-bg-success">Disponível</span></td>
-              </tr>
-
-              <tr>
-                <th scope="row">39</th>
-                <td>26,0 cm</td>
-                <td><span class="badge text-bg-success">Disponível</span></td>
-              </tr>
-
-              <tr>
-                <th scope="row">40</th>
-                <td>26,7 cm</td>
-                <td><span class="badge text-bg-warning">Últimas unidades</span></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-      </div>
-    </section>
-
-    <!------------------------- FORM ------------------------->
-    <section id="cadastro" class="py-5">
-      <div class="container">
-
-        <div class="row justify-content-center">
-          <div class="col-lg-7">
-
-            <div class="text-center mb-4">
-              <p class="section-label">NEWSLETTER</p>
-              <h2 class="fw-bold">Cadastre-se</h2>
-              <p class="text-secondary">
-                Receba novidades e ofertas da StreetStep.
-              </p>
-            </div>
-
-            <form class="bg-white p-4 p-md-5 rounded-4 shadow-sm">
-
-              <div class="mb-3">
-                <label for="nome" class="form-label">
-                  Nome
-                </label>
-
-                <input
-                  type="text"
-                  class="form-control"
-                  id="nome"
-                  name="nome"
-                  placeholder="Seu nome"
-                  required>
-              </div>
-
-              <div class="mb-3">
-                <label for="email" class="form-label">
-                  E-mail
-                </label>
-
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  name="email"
-                  placeholder="seu@email.com"
-                  required>
-              </div>
-
-              <div class="mb-3">
-                <label for="tamanho" class="form-label">
-                  Tamanho preferido
-                </label>
-
-                <select
-                  class="form-select"
-                  id="tamanho"
-                  name="tamanho"
-                  required>
-
-                  <option value="" selected>
-                    Selecione
-                  </option>
-
-                  <option value="37">37</option>
-                  <option value="38">38</option>
-                  <option value="39">39</option>
-                  <option value="40">40</option>
-                </select>
-              </div>
-
-              <div class="mb-3">
-                <label class="form-label d-block">
-                  Preferência
-                </label>
-
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="preferencia"
-                    id="casual"
-                    value="casual">
-
-                  <label class="form-check-label" for="casual">
-                    Casual
-                  </label>
-                </div>
-
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="preferencia"
-                    id="esporte"
-                    value="esporte">
-
-                  <label class="form-check-label" for="esporte">
-                    Esporte
-                  </label>
-                </div>
-              </div>
-
-              <div class="form-check mb-4">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  id="novidades"
-                  name="novidades">
-
-                <label class="form-check-label" for="novidades">
-                  Quero receber novidades.
-                </label>
-              </div>
-
-              <button type="submit" class="btn btn-warning w-100">
-                Cadastrar
-              </button>
-
-            </form>
-
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!------------------------- ACCORDION ------------------------->
-    <section id="duvidas" class="py-5 bg-white">
-      <div class="container">
-
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-
-            <div class="mb-4">
-              <p class="section-label">FAQ</p>
-              <h2 class="fw-bold">Dúvidas frequentes</h2>
-            </div>
-
-            <div class="accordion" id="accordionDuvidas">
-
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button
-                    class="accordion-button"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#duvidaUm"
-                    aria-expanded="true"
-                    aria-controls="duvidaUm">
-
-                    Como escolher o tamanho?
-
-                  </button>
-                </h3>
-
-                <div
-                  id="duvidaUm"
-                  class="accordion-collapse collapse show"
-                  data-bs-parent="#accordionDuvidas">
-
-                  <div class="accordion-body">
-                    Consulte nossa tabela de medidas antes de finalizar a compra.
-                  </div>
-
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#duvidaDois"
-                    aria-expanded="false"
-                    aria-controls="duvidaDois">
-
-                    Qual é o prazo de entrega?
-
-                  </button>
-                </h3>
-
-                <div
-                  id="duvidaDois"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#accordionDuvidas">
-
-                  <div class="accordion-body">
-                    O prazo depende da região e é apresentado no fechamento do pedido.
-                  </div>
-
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#duvidaTres"
-                    aria-expanded="false"
-                    aria-controls="duvidaTres">
-
-                    Posso trocar o produto?
-
-                  </button>
-                </h3>
-
-                <div
-                  id="duvidaTres"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#accordionDuvidas">
-
-                  <div class="accordion-body">
-                    Consulte as condições de troca da loja antes de realizar o pedido.
-                  </div>
-
-                </div>
-              </div>
-
-            </div>
-          </div>
+        <div>
+          Consulte as condições de troca da loja antes de realizar o pedido.
         </div>
 
       </div>
@@ -486,135 +199,8 @@
 
   </main>
 
-  <!------------------------- MODAIS ------------------------->
-
-  <div
-    class="modal fade"
-    id="modalUrban"
-    tabindex="-1"
-    aria-labelledby="modalUrbanLabel"
-    aria-hidden="true">
-
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-
-        <div class="modal-header">
-          <h2 class="modal-title h5" id="modalUrbanLabel">
-            StreetStep Urban
-          </h2>
-
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Fechar">
-          </button>
-        </div>
-
-        <div class="modal-body">
-          Modelo leve para uso cotidiano.
-          <strong>R$ 299,90</strong>
-        </div>
-
-        <div class="modal-footer">
-          <button
-            type="button"
-            class="btn btn-secondary"
-            data-bs-dismiss="modal">
-            Fechar
-          </button>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <div
-    class="modal fade"
-    id="modalRun"
-    tabindex="-1"
-    aria-labelledby="modalRunLabel"
-    aria-hidden="true">
-
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-
-        <div class="modal-header">
-          <h2 class="modal-title h5" id="modalRunLabel">
-            StreetStep Run
-          </h2>
-
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Fechar">
-          </button>
-        </div>
-
-        <div class="modal-body">
-          Conforto para acompanhar sua rotina.
-          <strong>R$ 349,90</strong>
-        </div>
-
-        <div class="modal-footer">
-          <button
-            type="button"
-            class="btn btn-secondary"
-            data-bs-dismiss="modal">
-            Fechar
-          </button>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <div
-    class="modal fade"
-    id="modalPro"
-    tabindex="-1"
-    aria-labelledby="modalProLabel"
-    aria-hidden="true">
-
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-
-        <div class="modal-header">
-          <h2 class="modal-title h5" id="modalProLabel">
-            StreetStep Pro
-          </h2>
-
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Fechar">
-          </button>
-        </div>
-
-        <div class="modal-body">
-          Mais suporte para atividades intensas.
-          <strong>R$ 449,90</strong>
-        </div>
-
-        <div class="modal-footer">
-          <button
-            type="button"
-            class="btn btn-secondary"
-            data-bs-dismiss="modal">
-            Fechar
-          </button>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <footer class="py-4">
-    <div class="container text-center">
-      <p class="mb-0">StreetStep &copy; 2026</p>
-    </div>
+  <footer>
+    <p>StreetStep &copy; 2026</p>
   </footer>
 
   <script
